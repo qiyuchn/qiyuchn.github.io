@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- @TODO Link the favicon via href -->
+    <!-- <link rel="icon" type="image/png" href="" size="16x16"> -->
+
+    <meta charset="UTF-8">
+    <title>Yu Qi</title>
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="src/mixitup/src/jquery.mixitup.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--
+
+        Navigation
+
+        -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <!-- @TODO Insert your logo here -->
+                <a class="navbar-brand" href="index.html"><img id="yqLogo" src="thumbnails/YQ.png" alt="Yu Qi" /></a>
+            
+
+            <!-- This is where you insert your navbar items. Class active and span current should only go around the active tab.-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav links">
+                    <li><a href="#titleWrapper">Home</a></li>
+                    <li><a href="#Container">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+
+        Main Content Goes here
+
+    -->
+
+    <div class="jumbotron" id="titleWrapper">
+        <div id="welcome">
+            <!-- Type your welcome message here -->
+            <h1 id="hello">Hello! I'm Yu, UX Researcher &amp; Designer.</h1>
+            <p id="helloDesc">I combine quantifiable psychological research with unquantifiable people skills.</p>
+        </div>
+
+    </div>
+
+    <div id="buttons">
+        <button class="filter" data-filter=".category-1">All</button>
+        <button class="filter" data-filter=".category-2">UX Design</button>
+        <button class="filter" data-filter=".category-3">UX Research</button>
+        <button class="filter" data-filter=".category-4">Front-End</button>
+    </div>
+
+    <!-- Fill in the dots with your projects  Yessir
+        I made some of the thumbnails in orange color, but it can be changed easily if needed-->
+    <div id="Container">
+        <div class="mix category-1 category-3" data-my-order="1">
+            <div><img src="thumbnails/instagram35x23.jpg" alt="Instagram_logo"></div>
+            <div class="thumbnail_descrip">
+                <h4>Deception on Instagram</h4>
+                <h5>A Study of how people interacting with social network</h5>
+            </div>
+        </div>
+        <a href="projects/robotchef.html">
+            <div class="mix category-1 category-3" data-my-order="2">
+                <div><img src="thumbnails/robotChef35x23.png" alt="robotChef"></div>
+                <div class="thumbnail_descrip">
+                    <h4>RobotChef</h4>
+                    <h5>Design Human-Robot Interaction in Kitchen Collaboration</h5>
+                </div>
+            </div>
+        </a>
+        <div class="mix category-1 category-2 category-3" data-my-order="3">
+            <div><img src="thumbnails/nutriphone35x23.png" alt="Nutriphone"></div>
+            <div class="thumbnail_descrip">
+                <h4>Nutriphone</h4>
+                <h5>User Interface Design/Research on Health Mobile Application</h5>
+            </div>
+        </div>
+        <div class="mix category-1 category-3" data-my-order="4">
+            <div><img src="thumbnails/keepon35x23.png" alt="Keepon"></div>
+            <div class="thumbnail_descrip">
+                <h4>MyKeepon Project</h4>
+                <h5>Design Interaction between Children and Robot</h5>
+            </div>
+        </div>
+        <div class="mix category-1 category-4" data-my-order="4">
+            <div><img src="thumbnails/dataVisualization.png" alt="dataVisualization.png"></div>
+            <div class="thumbnail_descrip">
+                <h4>Friends in High Places | Space App Challenge</h4>
+                <h5>Data Visulization Design</h5>
+            </div>
+        </div>
+        <div class="mix category-1 category-2 category-4" data-my-order="4">
+            <div><img src="thumbnails/betterU35x23.png" alt="BetterU"></div>
+            <div class="thumbnail_descrip">
+                <h4>BetterU</h4>
+                <h5>UI/UX Deisgn on Health Mobile Application</h5>
+            </div>
+        </div>
+        <div class="mix category-1 category-2" data-my-order="4">
+            <div><img src="thumbnails/hci35x23.png" alt="HCI"></div>
+            <div class="thumbnail_descrip">
+                <h4>Stranger Interaction in Dining Space</h4>
+                <h5>Critical Design on Human Interactions</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2 id="connectTitle">Let's Connect!</h2>
+
+        <div id="info">
+            <div id="textIcons">
+                <div id="textInfo">
+                    <p>
+                        <img src="thumbnails/location.png" alt="Location" />
+                        Bellevue, WA | Somerville, MA
+                    </p>
+                    <p>
+                        <img src="thumbnails/mail.png" alt="Email" />
+                        yq85@cornell.edu
+                    </p>
+                    <p>
+                        <img src="thumbnails/phone.png" alt="Phone" />
+                        (305)&nbsp;766-6498
+                    </p>
+                </div>
+                <div id="iconInfo">
+                    <p>
+                        <img src="thumbnails/linkedin.png" alt="LinkedIn" />
+                        <img src="thumbnails/fb.png" alt="Facebook" />
+                        <img src="thumbnails/meetup.png" alt="Meetup" />
+                    </p>
+                </div>
+            </div>
+            <div id="coffeeCup">
+                <p>
+                    <img src="thumbnails/latte.png" alt="latte" />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Yu Qi 2016</p>
+    </footer>
+
+
+    <!-- MixItUp script -->
+    <script>
+        $(function () {
+            $('#Container').mixItUp();
+        });
+    </script>
+
+    <!-- Smooth scroll adapted from CSS-tricks -->
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    console.log(target.offset().top);
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top-200 //subtract 200 for the space taken up by the fixed navbar
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

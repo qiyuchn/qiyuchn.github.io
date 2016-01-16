@@ -1,0 +1,73 @@
+﻿#projectHeader{
+	background-color: #00356B !important;
+	border-bottom: 1px solid #555;
+	padding-top:216px;
+	padding-bottom:126px;
+    color:white;
+    margin-bottom:0px;
+}
+
+#mainContent{
+    width:60%;
+    margin:0px auto;
+}
+
+.overviewCategory{
+    font-weight:bold;
+}
+
+#stepList{
+    list-style:none;
+    display:inline-block;
+    position:initial !important;
+    font-weight:normal;
+}
+
+#mainContent>div:last-child{
+    margin-bottom: 60px;
+}
+
+img{
+    width:300px;
+    height:auto;
+}
+
+.sectionTitle{
+    margin-bottom:30px !important;
+    font-size:24px;
+}
+
+#mainContent{
+    font-size:16px;
+}
+
+.procedure{
+    font-size:20px;
+    margin-top:20px;
+}
+
+#sampleImages{
+    text-align:center;
+}
+
+#imageSet img{
+    width:120px !important;
+}
+
+#imageSet{
+    text-align:center;
+}
+
+#embedWrapper{
+    text-align:center;
+}
+
+#bcWrapper{
+    width:60%;
+    margin:auto;
+}
+
+.breadcrumb{
+    background-color:transparent !important;
+    padding-left:0px !important;
+}
