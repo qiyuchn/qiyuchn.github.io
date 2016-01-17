@@ -9,6 +9,9 @@
     <meta charset="UTF-8">
     <title>Yu Qi</title>
 
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Noto+Sans' rel='stylesheet' type='text/css' />
+
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -56,7 +59,6 @@
                     <li><a href="#Container">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Resume</a></li>
-                    <li><a href="#">About</a></li>
                 </ul>
             </div>
         </div>
@@ -78,6 +80,23 @@
 
     </div>
 
+    <div class="jumbotron" id="aboutWrapper">
+        <div id="profilePicture">
+            <p><img src="img/profile_square.png" /></p>
+        </div>
+        <div id="profileText">
+            <p>I'm an energetic and passionate adventurer who is highly interested in User Experience Research/Design, Data Visualization/Analytics, and Technology Consulting.</p>
+            <ul id="profileList">
+                <li>A bookworm who explores the world through pages</li>
+                <li>A runner who looks forward to his first marathon</li>
+                <li>A road tripper who travels across the country with his beloved Passat</li>
+            </ul>
+        </div>
+        <div id="profileQuote">
+            <p>Be curious, not judgmental. -Walt Whitman</p>
+        </div>
+    </div>
+
     <div id="buttons">
         <button class="filter" data-filter=".category-1">All</button>
         <button class="filter" data-filter=".category-2">UX Design</button>
@@ -88,13 +107,15 @@
     <!-- Fill in the dots with your projects  Yessir
         I made some of the thumbnails in orange color, but it can be changed easily if needed-->
     <div id="Container">
-        <div class="mix category-1 category-3" data-my-order="1">
-            <div><img src="thumbnails/instagram35x23.jpg" alt="Instagram_logo"></div>
-            <div class="thumbnail_descrip">
-                <h4>Deception on Instagram</h4>
-                <h5>A Study of how people interacting with social network</h5>
+        <a href="#">
+            <div class="mix category-1 category-3" data-my-order="1">
+                <div><img src="thumbnails/instagram35x23.jpg" alt="Instagram_logo"></div>
+                <div class="thumbnail_descrip">
+                    <h4>Deception on Instagram</h4>
+                    <h5>A Study of how people interacting with social network</h5>
+                </div>
             </div>
-        </div>
+        </a>
         <a href="projects/robotchef.html">
             <div class="mix category-1 category-3" data-my-order="2">
                 <div><img src="thumbnails/robotChef35x23.png" alt="robotChef"></div>
@@ -104,41 +125,51 @@
                 </div>
             </div>
         </a>
-        <div class="mix category-1 category-2 category-3" data-my-order="3">
-            <div><img src="thumbnails/nutriphone35x23.png" alt="Nutriphone"></div>
-            <div class="thumbnail_descrip">
-                <h4>Nutriphone</h4>
-                <h5>User Interface Design/Research on Health Mobile Application</h5>
+        <a href="#">
+            <div class="mix category-1 category-2 category-3" data-my-order="3">
+                <div><img src="thumbnails/nutriphone35x23.png" alt="Nutriphone"></div>
+                <div class="thumbnail_descrip">
+                    <h4>Nutriphone</h4>
+                    <h5>User Interface Design/Research on Health Mobile Application</h5>
+                </div>
             </div>
-        </div>
-        <div class="mix category-1 category-3" data-my-order="4">
-            <div><img src="thumbnails/keepon35x23.png" alt="Keepon"></div>
-            <div class="thumbnail_descrip">
-                <h4>MyKeepon Project</h4>
-                <h5>Design Interaction between Children and Robot</h5>
+        </a>
+        <a href="#">
+            <div class="mix category-1 category-3" data-my-order="4">
+                <div><img src="thumbnails/keepon35x23.png" alt="Keepon"></div>
+                <div class="thumbnail_descrip">
+                    <h4>MyKeepon Project</h4>
+                    <h5>Design Interaction between Children and Robot</h5>
+                </div>
             </div>
-        </div>
-        <div class="mix category-1 category-4" data-my-order="4">
-            <div><img src="thumbnails/dataVisualization.png" alt="dataVisualization.png"></div>
-            <div class="thumbnail_descrip">
-                <h4>Friends in High Places | Space App Challenge</h4>
-                <h5>Data Visulization Design</h5>
+        </a>
+        <a href="#">
+            <div class="mix category-1 category-4" data-my-order="4">
+                <div><img src="thumbnails/dataVisualization.png" alt="dataVisualization.png"></div>
+                <div class="thumbnail_descrip">
+                    <h4>Friends in High Places | Space App Challenge</h4>
+                    <h5>Data Visulization Design</h5>
+                </div>
             </div>
-        </div>
-        <div class="mix category-1 category-2 category-4" data-my-order="4">
-            <div><img src="thumbnails/betterU35x23.png" alt="BetterU"></div>
-            <div class="thumbnail_descrip">
-                <h4>BetterU</h4>
-                <h5>UI/UX Deisgn on Health Mobile Application</h5>
+        </a>
+        <a href="#">
+            <div class="mix category-1 category-2 category-4" data-my-order="4">
+                <div><img src="thumbnails/betterU35x23.png" alt="BetterU"></div>
+                <div class="thumbnail_descrip">
+                    <h4>BetterU</h4>
+                    <h5>UI/UX Deisgn on Health Mobile Application</h5>
+                </div>
             </div>
-        </div>
-        <div class="mix category-1 category-2" data-my-order="4">
-            <div><img src="thumbnails/hci35x23.png" alt="HCI"></div>
-            <div class="thumbnail_descrip">
-                <h4>Stranger Interaction in Dining Space</h4>
-                <h5>Critical Design on Human Interactions</h5>
+        </a>
+        <a href="#">
+            <div class="mix category-1 category-2" data-my-order="4">
+                <div><img src="thumbnails/hci35x23.png" alt="HCI"></div>
+                <div class="thumbnail_descrip">
+                    <h4>Stranger Interaction in Dining Space</h4>
+                    <h5>Critical Design on Human Interactions</h5>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <div id="contact">
@@ -148,15 +179,15 @@
             <div id="textIcons">
                 <div id="textInfo">
                     <p>
-                        <img src="thumbnails/location.png" alt="Location" />
+                        <img src="thumbnails/location.png" alt="Location" />&nbsp;&nbsp;&nbsp;
                         Bellevue, WA | Somerville, MA
                     </p>
                     <p>
-                        <img src="thumbnails/mail.png" alt="Email" />
+                        <img src="thumbnails/mail.png" alt="Email" />&nbsp;&nbsp;&nbsp;
                         yq85@cornell.edu
                     </p>
                     <p>
-                        <img src="thumbnails/phone.png" alt="Phone" />
+                        <img src="thumbnails/phone.png" alt="Phone" />&nbsp;&nbsp;&nbsp;
                         (305)&nbsp;766-6498
                     </p>
                 </div>
@@ -165,6 +196,11 @@
                         <img src="thumbnails/linkedin.png" alt="LinkedIn" />
                         <img src="thumbnails/fb.png" alt="Facebook" />
                         <img src="thumbnails/meetup.png" alt="Meetup" />
+                    </p>
+                </div>
+                <div id="resumeInfo">
+                    <p>
+                        <img src="thumbnails/resumeButton.png" alt="Resume" />
                     </p>
                 </div>
             </div>
