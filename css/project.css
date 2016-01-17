@@ -17,7 +17,7 @@
 }
 
 #stepList{
-    list-style:none;
+    /*list-style:none;*/
     display:inline-block;
     position:initial !important;
     font-weight:normal;

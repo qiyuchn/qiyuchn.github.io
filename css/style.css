@@ -19,6 +19,10 @@ body{
 	font-size:38px !important;
 }
 
+#hello span{
+    color: #00356B;
+}
+
 #helloDesc{
 	font-size: 26px !important;
 }
@@ -142,6 +146,7 @@ footer{
 	height:90px;
 	border-bottom:1px solid #555 !important;
 	background-color:white;
+    opacity: .95;
 }
 
 .links{
@@ -212,11 +217,19 @@ nav a:hover{
 	padding-left:20px;
 }
 
+#profileText span{
+	color: #00356B;
+    font-weight: bold;
+}
+
 #profileQuote{
 	text-align:center;
 	font-family:'Roboto Slab', 'Open Sans', 'Helvetica', serif;
 	font-style:italic;
 }
+/*test font
+Is it possible to try 'American Typewriter' font? Googlefonts? or that's something we have to pay for?
+*/
 
 #aboutWrapper{
 	background-color:transparent !important;
