@@ -147,6 +147,25 @@ footer{
 	border-bottom:1px solid #555 !important;
 	background-color:white;
     opacity: .95;
+    
+    /*shrinking movement*/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+    height: 45px;
+    background: #00356B !important;
+}
+
+nav.navbar.shrink ul{
+    padding-top: 0px;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+nav.navbar.shrink a{
+   color: #ffffff !important;
 }
 
 .links{
@@ -157,6 +176,19 @@ ul{
 	padding-top:20px;
 	font-size: 13px;
 	font-weight:bold;
+    
+    /*shrinking movement*/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.navbar-brand.shrink{
+	margin-left:160px !important; 
+    padding-top: 6.5px;  
+}
+.navbar-brand.shrink #yqLogo{
+	width: 35px; 
+    height: 35px;  
 }
 
 li{
@@ -178,6 +210,10 @@ footer p{
 
 .navbar-brand{
 	margin-left:150px !important;
+    
+    /*shrinking movement*/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 ul.nav.navbar-nav{
@@ -189,6 +225,10 @@ nav a{
 	font-size: 18px !important;
 	font-weight: normal;
 	color: #888 !important;
+}
+
+.current{
+    color:  #00356B !important;
 }
 
 nav a:hover{

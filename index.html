@@ -228,6 +228,7 @@
     </script>
 
     <!-- Smooth scroll adapted from CSS-tricks -->
+    <!--adding highlight current tab with scroll, I think it should be here right, Sam?-->
     <script>
         $(function () {
             $('a[href*=#]:not([href=#])').click(function () {
@@ -245,6 +246,31 @@
             });
         });
     </script>
+    
+    <!--highlight current active nav tab when user click-->
+   <!-- <script>
+        $("nav a").click(function ( e ) {
+            e.preventDefault();
+            $("nav a").removeClass("current"); 
+            $(this).addClass("current");  
+
+        });
+
+    </script>-->
+    
+    <!--Shrink Nav bar-->
+    <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+            $('nav, .navbar-brand').addClass('shrink');
+            $('#yqLogo').attr("src","img/thumbnails/YQ_shrink.png");
+        } else {
+            $('nav, .navbar-brand').removeClass('shrink');
+            $('#yqLogo').attr("src","img/thumbnails/YQ.png");
+        }
+    });
+    </script>
+    
 </body>
 
 </html>
