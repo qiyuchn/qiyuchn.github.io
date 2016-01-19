@@ -35,6 +35,7 @@ body{
 #buttons button:hover{
 	color: #ffffff;
     background: #00356B;
+    transition: all 0.13s linear;
 }
 
 .filter.active{
@@ -147,8 +148,8 @@ footer{
 	padding:0px;
 	color:white;
 	text-align:center;
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 #yqLogo{
@@ -279,13 +280,14 @@ nav a:hover{
 }
 
 #profileQuote{
-	text-align:center;
-	font-family:'Roboto Slab', 'Open Sans', 'Helvetica', serif;
-	font-style:italic;
+	font-size: 17px;
+    text-align:center;
+	font-family:'PT Mono', Courier, monospace;
+	/*font-style:italic;*/
 }
-/*test font
-Is it possible to try 'American Typewriter' font? Googlefonts? or that's something we have to pay for?
-*/
+#profileQuote{
+    margin-bottom: 0px;
+}
 
 #aboutWrapper{
 	background-color:transparent !important;
@@ -309,13 +311,23 @@ a, a:hover{
 	text-decoration: none !important;
 }
 
-a img{
+#Container a img{
 	display:block;
-
 	transition: all 0.23s linear;
 }
 
-a img:hover{
+#Container a img:hover{
 	opacity: 0.6;
-	text-decoration:none !important;
+}
+
+#Container a{
+	color: #000000;
+}
+
+#textIcons a img{
+	transition: all 0.23s linear;
+}
+
+#textIcons a img:hover{
+	opacity: 0.6;
 }

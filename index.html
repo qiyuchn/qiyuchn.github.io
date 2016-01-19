@@ -10,7 +10,7 @@
     <title>Yu Qi</title>
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Noto+Sans' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=PT+Mono|Open+Sans|Noto+Sans' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -88,7 +88,7 @@
             <p><img src="img/profile_square.png" /></p>
         </div>
         <div id="profileText">
-            <p>An energetic adventurer in <span>User Experience (UX) Research & Design</span>, <br><span>Technology Consulting</span>, and <span>Front-End Development</span></p>
+            <p>An energetic adventurer in <span>User Experience (UX) Research & Design</span>, <br><span>Consulting</span>, and <span>Front-End Development</span></p>
             <ul id="profileList">
                 <li>A bookworm who explores the world through pages</li>
                 <li>A runner who looks forward to his first marathon</li>
@@ -96,7 +96,7 @@
             </ul>
         </div>
         <div id="profileQuote">
-            <p>Be curious, not judgmental. -Walt Whitman</p>
+            <p>Be Curious, Not Judgmental. -Walt Whitman</p>
         </div>
     </div>
 
@@ -196,14 +196,14 @@
                 </div>
                 <div id="iconInfo">
                     <p>
-                        <img src="img/thumbnails/linkedin.png" alt="LinkedIn" />
-                        <img src="img/thumbnails/fb.png" alt="Facebook" />
-                        <img src="img/thumbnails/meetup.png" alt="Meetup" />
+                       <a href="#"><img src="img/thumbnails/linkedin.png" alt="LinkedIn" /></a>
+                       <a href="#"><img src="img/thumbnails/fb.png" alt="Facebook" /></a>
+                       <a href="#"><img src="img/thumbnails/meetup.png" alt="Meetup" /></a>
                     </p>
                 </div>
                 <div id="resumeInfo">
                     <p>
-                        <img src="img/thumbnails/resumeButton.png" alt="Resume" />
+                       <a href="#"><img src="img/thumbnails/resumeButton.png" alt="Resume" /></a>
                     </p>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                     console.log(target.offset().top);
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top-200 //subtract 200 for the space taken up by the fixed navbar
+                            scrollTop: target.offset().top-162 //subtract 200 for the space taken up by the fixed navbar
                         }, 1000);
                         return false;
                     }
