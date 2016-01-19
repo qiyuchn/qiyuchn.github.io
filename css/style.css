@@ -342,7 +342,7 @@ a, a:hover{
 	transition: all 0.23s linear;
 }
 
-#Container a img:hover{
+#Container a:hover img{
 	opacity: 0.6;
 }
 
