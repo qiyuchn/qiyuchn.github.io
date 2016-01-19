@@ -219,17 +219,15 @@ li{
 	margin-right: 5px !important;
 }
 
-nav li.navActive {
-    background-color: #286dc0;
-}
-
 nav li.navActive a{
     color: #ffffff;
+    background-color: #286dc0 !important;
+    transition: all 0.4s ease;
 }
 
 .navHome.beforeShrink a{
     color: #ffffff !important;
-    background: #00356B;
+    background: #00356B !important;
 }
 
 .navbar{
@@ -271,11 +269,13 @@ nav a{
 nav.shrink a:hover{
 	color: #ffffff !important;
     background: #286dc0 !important;/*#63aaff #286dc0*/
+    transition: all 0.13s linear;
 }
 
 nav a:hover{
 	color: #ffffff !important;
     background: #00356B !important;
+    transition: all 0.13s linear;
 }
 
 #profilePicture img{

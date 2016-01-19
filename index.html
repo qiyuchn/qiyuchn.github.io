@@ -254,28 +254,21 @@
                         $(link).parent().removeClass("navActive");
                     }
                 });
+                if ($(document).scrollTop() > 100) {
+                    $('nav, .navbar-brand').addClass('shrink');
+                    $('#yqLogo').attr("src","img/thumbnails/YQ_shrink.png");
+                    $('.navHome').removeClass('beforeShrink');
+
+                    //$('#yqLogo').attr("src","img/thumbnails/yq_small.png");
+                } else {
+                    $('nav, .navbar-brand').removeClass('shrink');
+                    $('#yqLogo').attr("src","img/thumbnails/YQ.png");
+                    $('.navHome').addClass('beforeShrink');
+                    $('.navHome').removeClass('navActive');
+                }
             });
         });
     </script>
-    
-    <!--Shrink Nav bar-->
-    <script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 100) {
-            $('nav, .navbar-brand').addClass('shrink');
-            $('#yqLogo').attr("src","img/thumbnails/YQ_shrink.png");
-            $('.navHome').removeClass('beforeShrink');
-
-            //$('#yqLogo').attr("src","img/thumbnails/yq_small.png");
-        } else {
-            $('nav, .navbar-brand').removeClass('shrink');
-            $('#yqLogo').attr("src","img/thumbnails/YQ.png");
-            $('.navHome').addClass('beforeShrink');
-            $('.navHome').removeClass('navActive');
-        }
-    });
-    </script>
-    
 </body>
 
 </html>
