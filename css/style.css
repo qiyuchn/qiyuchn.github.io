@@ -155,6 +155,10 @@ footer{
 #yqLogo{
 	width:60px;
 	height:60px;
+    
+    /*shrinking movement*/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;    
 }
 
 .navbar{
@@ -188,10 +192,13 @@ nav.navbar.shrink a{
 	/*margin-left:160px !important;*//*this changes the horiontal position of the sight logo*/ 
     padding-top: 6.5px;  
 }
+
 .navbar-brand.shrink #yqLogo{
 	width: 35px; 
-    height: 35px;  
+    height: 35px; 
 }
+
+
 /*shrink class end*/
 
 .links{
@@ -210,6 +217,19 @@ ul{
 
 li{
 	margin-right: 5px !important;
+}
+
+nav li.navActive {
+    background-color: #286dc0;
+}
+
+nav li.navActive a{
+    color: #ffffff;
+}
+
+.navHome.beforeShrink a{
+    color: #ffffff !important;
+    background: #00356B;
 }
 
 .navbar{
@@ -241,15 +261,21 @@ nav a{
 	font-family: 'Noto Sans', 'Open Sans', 'Helvetica', sans-serif;
 	font-size: 18px !important;
 	font-weight: normal;
-	color: #888 !important;
+	color: #00356B !important;
 }
-
+/*
 .current{
     color:  #00356B !important;
 }
+*/
+nav.shrink a:hover{
+	color: #ffffff !important;
+    background: #286dc0 !important;/*#63aaff #286dc0*/
+}
 
 nav a:hover{
-	color: #00356B !important;
+	color: #ffffff !important;
+    background: #00356B !important;
 }
 
 #profilePicture img{

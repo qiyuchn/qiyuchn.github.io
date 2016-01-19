@@ -58,7 +58,7 @@
             <!-- This is where you insert your navbar items. Class active and span current should only go around the active tab.-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav links">
-                    <li><a href="#titleWrapper">Home</a></li>
+                    <li class="navHome beforeShrink"><a href="#titleWrapper">Home</a></li>
                     <li><a href="#Container">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="YuQi_Resume.pdf" target="_blank">Resume</a></li>
@@ -106,9 +106,6 @@
         <button class="filter" data-filter=".category-3">UX Research</button>
         <button class="filter" data-filter=".category-4">Front-End</button>
     </div>
-
-    <!-- Fill in the dots with your projects  Yessir
-        I made some of the thumbnails in orange color, but it can be changed easily if needed-->
     <div id="Container">
         <a href="#">
             <div class="mix category-1 category-3" data-my-order="1">
@@ -244,19 +241,22 @@
                     }
                 }
             });
+            
+            $(window).scroll(function() {
+                var sections = $('a[href*=#]:not([href=#])');
+                highlighted = false;
+                sections.get().reverse().forEach(function(link) {
+                    var target = $(link.hash);
+                    if (!highlighted && target.offset().top < ($(window).scrollTop() + $(window).height()/2)) {
+                        $(link).parent().addClass("navActive");
+                        highlighted = true;
+                    } else {
+                        $(link).parent().removeClass("navActive");
+                    }
+                });
+            });
         });
     </script>
-    
-    <!--highlight current active nav tab when user click-->
-   <!-- <script>
-        $("nav a").click(function ( e ) {
-            e.preventDefault();
-            $("nav a").removeClass("current"); 
-            $(this).addClass("current");  
-
-        });
-
-    </script>-->
     
     <!--Shrink Nav bar-->
     <script>
@@ -264,11 +264,14 @@
         if ($(document).scrollTop() > 100) {
             $('nav, .navbar-brand').addClass('shrink');
             $('#yqLogo').attr("src","img/thumbnails/YQ_shrink.png");
+            $('.navHome').removeClass('beforeShrink');
+
             //$('#yqLogo').attr("src","img/thumbnails/yq_small.png");
         } else {
             $('nav, .navbar-brand').removeClass('shrink');
             $('#yqLogo').attr("src","img/thumbnails/YQ.png");
-            //$('#yqLogo').attr("src","img/thumbnails/yq_small.png");
+            $('.navHome').addClass('beforeShrink');
+            $('.navHome').removeClass('navActive');
         }
     });
     </script>
