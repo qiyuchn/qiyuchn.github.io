@@ -255,7 +255,7 @@ ul.nav.navbar-nav{
 	margin-right:50px !important;
 }
 
-nav a{
+nav li a{
 	font-family: 'Noto Sans', 'Open Sans', 'Helvetica', sans-serif;
 	font-size: 18px !important;
 	font-weight: normal;
@@ -266,13 +266,13 @@ nav a{
     color:  #00356B !important;
 }
 */
-nav.shrink a:hover{
+nav.shrink li a:hover{
 	color: #ffffff !important;
     background: #286dc0 !important;/*#63aaff #286dc0*/
     transition: all 0.13s linear;
 }
 
-nav a:hover{
+nav li a:hover{
 	color: #ffffff !important;
     background: #00356B !important;
     transition: all 0.13s linear;
