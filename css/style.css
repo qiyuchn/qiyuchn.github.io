@@ -229,6 +229,7 @@ nav li.navActive a{
 .navHome.beforeShrink a{
     color: #ffffff !important;
     background: #00356B !important;
+    margin: 0px;
 }
 
 .navbar{
