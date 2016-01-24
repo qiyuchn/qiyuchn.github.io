@@ -29,22 +29,23 @@
                 highlighted = false;
                 sections.get().reverse().forEach(function(link) {
                     var target = $(link.hash);
-                    if (!highlighted && target.offset().top < ($(window).scrollTop() + $(window).height()/2)) {
+                    if (target.length && !highlighted && target.offset().top < ($(window).scrollTop() + $(window).height()/2)) {
                         $(link).parent().addClass("navActive");
                         highlighted = true;
                     } else {
                         $(link).parent().removeClass("navActive");
                     }
                 });
+                var websiteContext = window.location.href.substring(0, window.location.href.lastIndexOf("/") + 1).replace("projects/", "");
                 if ($(document).scrollTop() > 100) {
                     $('nav, .navbar-brand').addClass('shrink');
-                    $('#yqLogo').attr("src","img/thumbnails/YQ_shrink.png");
+                    $('#yqLogo').attr("src", websiteContext + "img/thumbnails/YQ_shrink.png");
                     $('.navHome').removeClass('beforeShrink');
 
                     //$('#yqLogo').attr("src","img/thumbnails/yq_small.png");
                 } else {
                     $('nav, .navbar-brand').removeClass('shrink');
-                    $('#yqLogo').attr("src","img/thumbnails/YQ.png");
+                    $('#yqLogo').attr("src", websiteContext + "img/thumbnails/YQ.png");
                     $('.navHome').addClass('beforeShrink');
                     $('.navHome').removeClass('navActive');
                 }
