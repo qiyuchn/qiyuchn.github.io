@@ -22,6 +22,7 @@
     position:initial !important;
     font-weight:normal;
     font-size: 16px;
+    padding-top: 0px;
 }
 
 #stepList li{
@@ -57,10 +58,23 @@ img{
     margin-bottom: 30px;
 }
 
-
 .sampleImages img{
     text-align:center;
     max-width: 600px;
+}
+
+.sampleImages#keeponbot img{
+    max-width: 400px;
+}
+
+
+.sampleImages#hciAlternative figure{
+    display: inline-block;
+}
+
+.sampleImages#pdfbutton img{
+    text-align:center;
+    max-width: 70px;
 }
 
 #conceptTesting.sampleImages img{
@@ -80,6 +94,7 @@ img{
 .breadcrumb{
     background-color:transparent !important;
     padding-left:0px !important;
+    margin: 10px 0 10px 0 !important;
 }
 
 

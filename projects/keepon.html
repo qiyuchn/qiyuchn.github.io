@@ -99,7 +99,7 @@
             <p><span class="overviewCategory">Time:</span> May &ndash; December 2015</p>
             <p><span class="overviewCategory">Team Size:</span> 5</p>
             <p><span class="overviewCategory">Role:</span> UX Researcher Arduino Developer</p>
-            <p><span class="overviewCategory">Methodology:</span> Literature review, user testing, user interviews, behavior mapping, design thinking, prototyping, wizard of oz, Arduino programming, 3-D Printing</p>
+            <p><span class="overviewCategory">Methodology:</span> Literature review, User Testing, User Interviews, Behavior Mapping, Design Thinking, Prototyping, Wizard of Oz, Arduino Programming, 3-D Printing</p>
             <p><span class="overviewCategory">Tools:</span> Pen &amp; paper, Arduino</p>
             <p><span class="overviewCategory">Product:</span> A fully functional Keepon robot and a complete exploratory human-robot interaction study.</p>
         </div>
@@ -115,120 +115,67 @@
         <hr />
 
         <div id="Robot Building">
-            <!--<h3 class="sectionTitle">Methodology &amp; Procedures</h3>-->
+            <h3 class="sectionTitle">Keepon Robot</h3>
             <p>For this study, we used an <a href="http://hennyadmoni.com/keepon/">open-source robot - Keepon</a>. One reason we select this robot is because it has great degree of freedoms in movement. With Keepon, we can easily simulate human behaviors, such as nodding, shaking head,  idly looking, and breath. Keepon is also capable in conveying human emotions, such as happy, sad, and excitement. 
             </p>
             
-            <h4 class="procedure">Building Empathy</h4>
+            <h4 class="procedure"></h4>
             <p>In order to build a deep empathy and understanding of our users, our team went to eight local restaurants to observe ongoing kitchen activities. This selection of kitchens covers different cuisines, open or closed kitchen types, fast food or sit-down restaurant types, and on-campus or off-campus. With permission, I conducted contextual inquiries for two restaurants. Those highly detailed observations allow us to define our focus without pre-assumptions and design what they really need. </p>
             <p>Also by observing different kinds of restaurants, we discovered that ingredient containers (figure below) are widely used across a variety of restaurants like fast food and Chinese. I will discuss the significance of this observation in the following sections. </p>
             <div class="sampleImages">
                 <figure>
-                    <img src="../img/robotchef/RobotChef-observation.png" alt="Interview Screen" />
-                    <figcaption><em> Fig 1. (a) Contextual inquiry in a local restaurant. (b) Electronic order system. (c) Food ingredient containers</em></figcaption>
+                    <img src="../img/keepon/mykeeponDOF.png" alt="Keepon movement DOF" />
+                    <figcaption><em>Fig 1. Illustration of four degrees of freedom in Keepon movement</em></figcaption>
                 </figure>
             </div>
-            <h4 class="procedure">Define Problem</h4>
+            <div class="sampleImages" id="keeponbot">
+                <figure>
+                    <img src="../img/keepon/finishedKeepon.jpg" alt="Finished Keepon" />
+                    <figcaption><em>Fig 2. Finished Keepon robot</em></figcaption>
+                </figure>
+            </div>
+            <!--<h4 class="procedure">Define Problem</h4>
             <p>
                 After unpacking and synthesizing our empathy findings into compelling needs and insights, we discovered that it is a common practice for restaurant staff to multitask. To minimize customer wait times, the chef often does multiple orders at once; meanwhile, there are in-person communications happening between the chef and other kitchen staff. 
             </p>
             <p>
                 During the contextual inquiry, a chef told us that a customized order is very error-prone. Connecting back to the multitasking practices and high-stress environment in the restaurant kitchen, we discovered that this is a great design space for us to create meaningful robot interactions. 
-            </p>
+            </p>-->
         </div>
 
         <hr />
 
-        <div id="brainstorming">
-            <h3 class="sectionTitle">Brainstorming &amp; Ideation</h3>
-            <p>In this step, our team explored a wide solution space, and large quantity of ideas with good diversity.</p>
-            <ul id="stepList">
-                <li>Light signals</li>
-                <li>Ingredient scanner</li>
-                <li>Robot that picks up ingredients</li>
-                <li>Preparation table robot</li>
-                <li>Allergy detector</li>
-                <li>Task allocator</li>
-            </ul>
-        </div>
-
-        <hr />
-
-        <div id="log">
-            <h3 class="sectionTitle">Design Log</h3>
+        <div id="sciencenter">
+            <h3 class="sectionTitle">Keepon’s interaction with kids in Sciencenter, Ithaca NY</h3>
+            <p>We presented our robot to children around 10 years old in Sciencenter, Ithaca. It is an educational 
+                activity of teaching children robotics, but the enthusiasm children showed towards Keepon robot gave 
+                us great confidence moving forward. </p>
             <div class="sampleImages">
                 <figure>
-                    <img src="../img/designLog.png" alt="Design Log" />
-                    <figcaption>Fig.2 - A view of the pulpit rock in Norway.</figcaption>
+                    <img src="../img/keepon/sciencenter.jpg" alt="children interaction with Keepon" />
+                    <figcaption><em>Fig 2. Chidren interact with Keepon in Sciencenter, Ithaca</em></figcaption>
                 </figure>
             </div>
-            
-        </div>
-
-        <hr />
-
-        <div id="prototyping">
-            <h3 class="sectionTitle">Prototyping</h3>
-            
-            <h4 class="procedure">Video Prototype</h4>
-            <div class="embedWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GpsmRwAoJg0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!--@TODO including a picture of screen shot from the video above-->
-            
-            <h4 class="procedure">Physical Prototype</h4>
-            <p> The first prototype is to push ingredient containers up to in order to signal which ingredients are needed. 
-            </p>
-            <div class="sampleImages" id="conceptTesting">
+            <div class="sampleImages">
                 <figure>
-                    <img src="../img/robotchef/proto_pushup.png" alt="prototype_push-up" />
-                    <figcaption><em>Fig 3. Concept Testing for Pushing-up idea</em></figcaption>
+                    <img src="../img/keepon/childrenInterface.jpg" alt="children keyboard interface" />
+                    <figcaption><em>Fig 3. Simple interface designed for children</em></figcaption>
                 </figure>
             </div>
-            
-            <p> The second prototype is to have a structure that can help us lift the lid of ingredient containers. 
-            </p>
-            <div class="sampleImages">
-                <img src="../img/robotchef/proto_lid.png" alt="prototype_lid" />
-            </div>
-            <p> The third prototype is to light up the container box. 
-            </p>
-            <div class="sampleImages">
-                <img src="../img/robotchef/proto_light.png" alt="Interview Screen" />
-            </div>
         </div>
-        
+
         <hr />
 
-        <div id="finalDesign">
-            <h3 class="sectionTitle">Final Design</h3>
-            <p>After video prototyping and initial physical prototyping, we decided to pursue and further iterate the push-up idea. The rationals are below:
+        <div id="labStudy">
+            <h3 class="sectionTitle">Lab User Study</h3>
+            <p>We also designed user studies in laboratory setting. Experimenters controlled Keepon 
+                from another room using Wizard of Oz method. By observing user’s behavior, experimenter 
+                issues Keepon corresponding movements commands. We used different psychological and 
+                behavioral measurements to evaluate the emotional responses of our participants.
             </p>
-            <ul id="stepList">
-                <li>Compared to other design ideas we have, the push-up idea gave us greater freedom to design interactions, such as signaling behavior (pushing up), reminding behavior (shaking), and warning behaviors.
-                </li>
-                <li>Through our video prototype, the push-up idea is more subtle, intuitive and natural compared to other interactions.
-                </li>
-                <li>Most ingredient containers we observed are made from metal, which makes the light-up design hard to implement and less practical
-                </li>
-            </ul>
-            <div class="embedWrapper">
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/dCinPKMC9t4" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        
-        <div id="evaluation">
-            <h3 class="sectionTitle">Evaluation</h3>
-            <div class="embedWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eQhpQgPYAeo" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div id="brainstorming">
-            <h3 class="sectionTitle">Things I Learned</h3>
-            <p>The significance of our observations - At the beginning of this project, we did not have a clue what would be the best item to design. It was truly through the in-depth observation and repeatedly watching recorded observations, we discovered meaningful design opportunities. It is a valuable process for discovering user needs and developing empathy, both on developing new products and refining existing user experiences. Design is really in the everyday life. 
+            <p>Illustration here:
             </p>
         </div>
-        <!-- Place somewhere in the <body> of your page -->
     </div>
 
 
