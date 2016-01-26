@@ -97,6 +97,18 @@ img{
     margin: 10px 0 10px 0 !important;
 }
 
+#insta-note{
+    font-size: 13;
+    font-style:italic;
+}
+
+#d3-demobutton a img{
+	transition: all 0.23s linear;
+}
+
+#d3-demobutton a:hover img{
+	opacity: 0.6;
+}
 
 /*
 .carousel-example-generic{
